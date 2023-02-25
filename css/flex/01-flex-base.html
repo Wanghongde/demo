@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      /* flex-direction: column-reverse;
+      flex-wrap: wrap-reverse; */
+      /* flex-flow: 方向 换行 */
+      /* flex-flow: row wrap; */
+      /* flex-wrap: wrap; */
+      justify-content: space-between;
+      align-content: center;
+      width: 500px;
+      height: 500px;
+      border: 1px solid red;
+    }
+    .item {
+      /* 放大 grow 如果都为1 则平分 */
+      /* flex-grow: 1; */
+
+      /* 缩放 shrink 如果为 0 则不允许缩放 */
+
+      /* flex-shrink: 0; */
+      /* 基准 basis 默认auto元素本来的大小 也可设置固定大小 */
+      /* flex-basis: 50px; */
+
+      /* flex: flex-grow flex-shrink flex-basis */
+      /* flex: 存在默认空间也不放大, 空间不足则缩小, 元素本来的大小  */
+      /* flex: 0                    1            auto; 默认*/
+
+      /* flex: auto 平分 空间不足缩小 元素本来的大小 */
+      /* flex: auto (1 1 auto) */
+      /* flex: 1 1 auto; */
+
+      /*           存在剩余空间不放大， 空间不足不缩小  */
+      /* flex: none (0 0 auto)*/
+      /* flex:none; */
+      font-size: 30px;
+      height: 100px;
+      box-sizing: border-box;
+      border: 1px solid red;
+      background-color: pink;
+    }
+
+    .item2 {
+      /* align 排列 */
+      align-self: center;
+      order: -1;
+      /* flex-grow: 2; */
+      /* flex-shrink: 0; */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item item2">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <!-- <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div> -->
+  </ul>
+</body>
+</html>
